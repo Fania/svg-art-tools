@@ -15,6 +15,7 @@ my_svg.addEventListener("click", (ev) => {
   // const elem = document.elementFromPoint(ev.offsetX, ev.offsetY);
   // console.log(elem);
   console.log(`(${ev.offsetX}, ${ev.offsetY})`);
+  navigator.clipboard.writeText(`${ev.offsetX} ${ev.offsetY}`);
 });
 
 
